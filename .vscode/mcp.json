@@ -1,4 +1,12 @@
 {
+	"servers": {
+		"postman-api-http-server": {
+			"type": "http",
+			"url": "https://mcp.postman.com/mcp",
+			"headers": {
+				"Authorization": "Bearer ${input:postman-api-key}"
+			}
+		},
 		"supabase": {
 			"command": "npx",
 			"args": [
